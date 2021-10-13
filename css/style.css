@@ -1,11 +1,52 @@
 /* GENERAL RULES */
 
+section.mp-sect-padd{
+    padding: 50px 0;
+}
+
+
+
+[class *= 'col']{ /* da rimuovere */
+    background-color: burlywood;
+    border: 1px solid black;
+    min-height: 50px;
+}
 
 
 /* HEADER */
 
+.mp-header-top{
+    height: 35px;
+}
+
+.mp-header-top img{
+    height: 40%;
+}
+
+.mp-header-bottom{
+    height: 65px;
+}
 
 /* MAIN */
 
+/* jumbotron */
+
+.mp-jumbo{
+    height: 600px; /* da rimuovere */
+    background-color: brown; /* da rimuovere */
+    margin-top: 100px;
+}
+.mp-jumbo-text{
+    height: 40%;
+    min-width: 40%;
+    background-color: aquamarine; /* da rimuovere */
+    
+}
+
 
 /* FOOTER */
+
+footer{
+    height: 500px; /* da rimuovere */
+    background-color: cornflowerblue; /* da modificare */
+}
