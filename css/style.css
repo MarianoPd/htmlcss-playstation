@@ -1,8 +1,10 @@
 /* GENERAL RULES */
-
-section.mp-sect-padd{
-    padding: 50px 0;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
 
 
 [class *= 'col']{ /* da rimuovere */
@@ -13,7 +15,6 @@ section.mp-sect-padd{
 
 .mp-text,
 .mp-text-white{
-    min-height: 40%; /* da togliere */
     width: 100%;
     background-color: aquamarine; /* da rimuovere */
     padding-left: 30px;
@@ -21,12 +22,12 @@ section.mp-sect-padd{
 
 .mp-text > p{
     color: #727272;
-    margin: 0;
 }
 
-.mp-text > p > span{
+.mp-text > span{
     color: #0072ce;
     text-transform: uppercase;
+    display: block;
 }
 
 .mp-text-white{
@@ -46,10 +47,13 @@ section.mp-sect-padd{
 
 [class *= 'mp-btn']{
     border-radius: 40px;
-    background-color: #2d64e6;
     color: white;
+    margin-bottom: 5px;
 }
 
+.mp-btn{
+    background-color: #2d64e6;
+}
 .mp-btn-red{
     background-color: #cd3d0f;
 }
@@ -120,7 +124,7 @@ section.mp-sect-padd{
 .mp-jumbo{
     background-color: brown; /* da rimuovere */
     margin-top: 100px;
-    height: 600px;
+    height: 620px;
     position: relative;
     overflow: hidden;
 }
@@ -169,6 +173,17 @@ section.mp-sect-padd{
 .mp-card:hover{
     opacity: 1;
     border-bottom: 2px solid #0072ce;
+}
+
+/* new-entry */
+.mp-bg-darkgray{
+    background-color: #1f1f1f;
+}
+
+
+/* mini-jumbo */
+.mp-bg-gray{
+    background-color: #bebcbb;
 }
 
 /* FOOTER */
