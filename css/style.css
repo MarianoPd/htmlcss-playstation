@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+.container-fluid{
+    padding-left: 30px;
+    padding-right: 30px;
+}
 
 
 [class *= 'col']{ /* da rimuovere */
@@ -38,10 +42,10 @@
     padding-right: 40%;
     object-fit: cover;
     width: 100%;
+    padding-bottom: 20px;
 }
 
 [class *= 'mp-text'] h1{
-    padding-top: 10px;
     padding-bottom: 20px;
 }
 
@@ -119,7 +123,7 @@
 .mp-jumbo{
     background-color: brown; /* da rimuovere */
     margin-top: 100px;
-    height: 620px;
+    height: 620px; /* da rimuovere */
     position: relative;
     overflow: hidden;
 }
@@ -172,7 +176,7 @@
 }
 
 
-/* mini-jumbo */
+/* ps-plus */
 .mp-bg-gray{
     background-color: #bebcbb;
 }
