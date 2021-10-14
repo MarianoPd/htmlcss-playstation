@@ -12,6 +12,80 @@ section.mp-sect-padd{
     min-height: 50px;
 }
 
+.mp-text,
+.mp-text-white{
+    min-height: 40%; /* da togliere */
+    width: 100%;
+    background-color: aquamarine; /* da rimuovere */
+    padding-left: 30px;
+}
+
+.mp-text-white{
+    color: white;
+}
+
+[class *= 'mp-btn']{
+    border-radius: 40px;
+    background-color: #2d64e6;
+    color: white;
+}
+
+.mp-btn-red{
+    background-color: #cd3d0f;
+}
+
+.mp-btn-gray{
+    background-color: #363636;
+}
+.mp-btn-white{
+    background-color: white;
+    color: black;
+}
+.mp-btn-explore{
+    background-color: #d9dadc;
+    color: #2d64e6;
+}
+
+[class *= 'mp-btn']:hover{
+    outline-offset: 2px;
+    filter: brightness(1.2);
+    color: white;
+}
+
+.mp-btn:hover{
+    outline: 2px solid #2d64e6;    
+}
+
+.mp-btn-red:hover{
+    outline: 2px solid #cd3d0f;  
+}
+
+.mp-btn-gray:hover{
+    outline: 2px solid #363636;
+}
+
+.mp-btn-white:hover{
+    outline: 2px solid white;
+    color: black;
+}
+
+.mp-btn-explore:hover{
+    filter: brightness(1);
+    color: #2d64e6;
+}
+
+
+
+[class *= 'mp-text'] img{
+    padding-right: 40%;
+    object-fit: cover;
+    width: 100%;
+}
+
+[class *= 'mp-text'] h1{
+    padding: 20px 0;
+}
+
 
 /* HEADER */
 
@@ -19,7 +93,7 @@ section.mp-sect-padd{
     height: 35px;
 }
 
-.mp-header-top img{
+.mp-header-top > img{
     height: 40%;
 }
 
@@ -32,15 +106,44 @@ section.mp-sect-padd{
 /* jumbotron */
 
 .mp-jumbo{
-    height: 600px; /* da rimuovere */
     background-color: brown; /* da rimuovere */
     margin-top: 100px;
+    height: 600px;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+
 }
-.mp-jumbo-text{
-    height: 40%;
-    min-width: 40%;
-    background-color: aquamarine; /* da rimuovere */
-    
+
+.mp-jumbo > img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.mp-jumbo-row{
+    position: absolute;
+    bottom: 50px;
+    width: 100%;
+}
+
+.mp-game-sel{
+    margin:10px;
+    border-radius:15px;
+    overflow: hidden;
+}
+
+.mp-game-sel img{
+    width: 100%;
+}
+
+.mp-game-outline{
+    outline: 2px solid #2d64e6;
+    outline-offset: 2px;
 }
 
 
