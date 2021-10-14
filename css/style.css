@@ -195,6 +195,20 @@
 /* FOOTER */
 
 footer{
-    height: 500px; /* da rimuovere */
-    background-color: cornflowerblue; /* da modificare */
+    min-height: 500px; /* da rimuovere */
+    background-color: #00439c; /* da modificare */
 }
+
+.mp-sie{
+   width: 150px; 
+}
+
+.mp-ps-footer{
+    height: 100px;
+    padding-bottom: 20px;
+}
+
+.mp-globe{
+    height: 20px;
+}
+
