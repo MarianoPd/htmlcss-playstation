@@ -5,7 +5,6 @@ section.mp-sect-padd{
 }
 
 
-
 [class *= 'col']{ /* da rimuovere */
     background-color: burlywood;
     border: 1px solid black;
@@ -20,8 +19,29 @@ section.mp-sect-padd{
     padding-left: 30px;
 }
 
+.mp-text > p{
+    color: #727272;
+    margin: 0;
+}
+
+.mp-text > p > span{
+    color: #0072ce;
+    text-transform: uppercase;
+}
+
 .mp-text-white{
     color: white;
+}
+
+[class *= 'mp-text'] img{
+    padding-right: 40%;
+    object-fit: cover;
+    width: 100%;
+}
+
+[class *= 'mp-text'] h1{
+    padding-top: 10px;
+    padding-bottom: 20px;
 }
 
 [class *= 'mp-btn']{
@@ -76,15 +96,7 @@ section.mp-sect-padd{
 
 
 
-[class *= 'mp-text'] img{
-    padding-right: 40%;
-    object-fit: cover;
-    width: 100%;
-}
 
-[class *= 'mp-text'] h1{
-    padding: 20px 0;
-}
 
 
 /* HEADER */
@@ -110,10 +122,7 @@ section.mp-sect-padd{
     margin-top: 100px;
     height: 600px;
     position: relative;
-    display: flex;
     overflow: hidden;
-    align-items: center;
-
 }
 
 .mp-jumbo > img{
@@ -129,6 +138,7 @@ section.mp-sect-padd{
     position: absolute;
     bottom: 50px;
     width: 100%;
+    max-height: 80%;
 }
 
 .mp-game-sel{
@@ -142,10 +152,24 @@ section.mp-sect-padd{
 }
 
 .mp-game-outline{
-    outline: 2px solid #2d64e6;
+    outline: 2px solid #0072ce;
     outline-offset: 2px;
 }
 
+/* hardware-shop */
+
+.mp-side-image{
+    width: 100%;
+}
+
+.mp-card{
+    opacity: 80%;
+}
+
+.mp-card:hover{
+    opacity: 1;
+    border-bottom: 2px solid #0072ce;
+}
 
 /* FOOTER */
 
