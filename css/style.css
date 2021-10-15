@@ -135,7 +135,6 @@ body{
 .mp-chevron-hover{
     display:none;
     transform: rotate(180deg) scaleX(-1);
-
 }
 
 .mp-header-sel:hover .mp-chevron{
@@ -278,8 +277,19 @@ body{
     background-color: #1f1f1f;
 }
 
+/* transition figa da sito PS */
 .mp-new-img img{
     border-radius: 15px;
+    width: 98% ;
+    margin: auto;
+    padding-bottom: 2%;
+    transition: filter 0.3s, width 0.3s;
+}
+
+.mp-new-img img:hover{
+    width: 100%;
+    padding-bottom: 0;
+    filter: blur(1px);
 }
 
 /* ps-plus */
