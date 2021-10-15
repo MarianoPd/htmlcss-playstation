@@ -50,6 +50,7 @@ body{
     border-radius: 40px;
     color: white;
     margin-bottom: 5px;
+    transition: filter 0.5s;
 }
 
 .mp-btn{
@@ -93,6 +94,7 @@ body{
 .mp-btn-white:hover{
     outline: 2px solid white;
     color: black;
+    filter: brightness(1);
 }
 
 .mp-btn-explore:hover{
@@ -225,14 +227,12 @@ body{
     width: 100%;  
 }
 
-.mp-game-sel-row{
-
-}
 
 .mp-game-sel{
     margin:10px;
     border-radius:15px;
     overflow: hidden;
+    transition: margin 0.5s;
 }
 
 /* hover da sito PS */
@@ -259,7 +259,8 @@ body{
 .mp-card{
     opacity: 80%;
     border: 2px solid transparent;
-    border-radius: 0;   
+    border-radius: 0;  
+    transition: opacity 0.5s; 
 }
 
 .mp-card:hover{
@@ -300,8 +301,8 @@ body{
 /* FOOTER */
 
 footer{
-    min-height: 500px; /* da rimuovere */
-    background-color: #00439c; /* da modificare */
+    min-height: 500px; 
+    background-color: #00439c; 
 }
 
 .mp-sie{
