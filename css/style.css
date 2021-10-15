@@ -5,22 +5,18 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family: Arial, Helvetica, sans-serif
+}
+
 .container-fluid{
     padding-left: 30px;
     padding-right: 30px;
 }
 
-
-[class *= 'col']{ /* da rimuovere */
-    background-color: burlywood;
-    border: 1px solid black;
-    min-height: 50px;
-}
-
 .mp-text,
 .mp-text-white{
     width: 100%;
-    background-color: aquamarine; /* da rimuovere */
     padding-left: 30px;
 }
 
@@ -113,41 +109,53 @@
 }
 
 .mp-header-bottom{
-    height: 65px;
+    min-height: 65px;
 }
 
 /* MAIN */
 
 /* jumbotron */
 
-.mp-jumbo{
-    background-color: brown; /* da rimuovere */
+.mp-jumbo,
+.mp-jumbo-two{
+    
     margin-top: 100px;
-    height: 620px; /* da rimuovere */
-    position: relative;
+    
+    background-image: url('../img/jumbo-bg.png');
     overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-.mp-jumbo > img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.mp-jumbo-two{
+    background-image: url('../img/it-takes-two-hero-banner-desktop.jpg');
 }
 
 .mp-jumbo-row{
-    position: absolute;
-    bottom: 50px;
-    width: 100%;
-    max-height: 80%;
+    padding-top: 300px;
+    padding-bottom: 50px;
+    width: 100%;  
+}
+
+.mp-game-sel-row{
+
 }
 
 .mp-game-sel{
     margin:10px;
     border-radius:15px;
     overflow: hidden;
+}
+
+/* hover da sito PS */
+.mp-game-sel:hover{
+    margin-top: 0;
+    filter: opacity(100%) !important;
+}
+
+.mp-game-sel-row .mp-game-sel{
+    filter: opacity(80%);
 }
 
 .mp-game-sel img{
