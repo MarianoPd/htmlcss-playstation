@@ -6,7 +6,8 @@
 }
 
 body{
-    font-family: Arial, Helvetica, sans-serif
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
 }
 
 .container-fluid{
@@ -35,7 +36,7 @@ body{
 }
 
 [class *= 'mp-text'] img{
-    padding-right: 40%;
+    padding-right: 30%;
     object-fit: cover;
     width: 100%;
     padding-bottom: 20px;
@@ -68,6 +69,7 @@ body{
 .mp-btn-explore{
     background-color: #d9dadc;
     color: #2d64e6;
+        
 }
 
 [class *= 'mp-btn']:hover{
@@ -96,6 +98,8 @@ body{
 .mp-btn-explore:hover{
     filter: brightness(1);
     color: #2d64e6;
+    outline-offset: 0;
+    outline: 2px solid #d9dadc67;
 }
 
 /* HEADER */
@@ -106,10 +110,93 @@ body{
 
 .mp-header-top > img{
     height: 40%;
+    padding-right: 30px;
 }
 
 .mp-header-bottom{
     min-height: 65px;
+    font-weight: 500;
+}
+
+.mp-header-sel{
+    text-decoration: none;
+    color: black;
+}
+
+.mp-chevron,
+.mp-chevron-hover{
+    height: 10px;
+    padding-left: 5px; 
+    display: inline;       
+}
+
+.mp-chevron-hover{
+    display:none;
+    transform: rotate(180deg) scaleX(-1);
+
+}
+
+.mp-header-sel:hover .mp-chevron{
+    display: none;
+}
+
+.mp-header-sel:hover .mp-chevron-hover{
+    display: inline;
+}
+
+.mp-collapse{
+    background-color: white;    
+}
+
+.mp-ps3{
+    padding:20px 50px;
+}
+
+.mp-ps3 img{
+    width: 60px;
+    display: block;
+}
+
+.mp-list{
+    width: 100%;
+    display: block;
+    text-align: center;
+    border-top: 1px solid #bebcbb;
+}
+
+.mp-list ul{
+    padding-top: 10px;
+}
+
+.mp-list li{
+    display: inline-block;
+    padding-right: 10px;
+    list-style-type: disc;
+    padding-top: 35px;
+}
+
+.mp-list li::before{
+    content: '\00a0\2022\00a0\00a0';
+    color: #0072ce;
+    font-size: 20px;
+}
+
+.mp-list a{
+    text-decoration: none;
+    color: black;
+}
+
+.mp-form{
+    margin-left: auto;
+}
+
+.mp-form button{
+    border: 0;
+}
+
+.mp-form img{
+    width: 40px;
+    padding-left: 20px;
 }
 
 /* MAIN */
@@ -171,6 +258,8 @@ body{
 
 .mp-card{
     opacity: 80%;
+    border: 2px solid transparent;
+    border-radius: 0;   
 }
 
 .mp-card:hover{
@@ -178,11 +267,19 @@ body{
     border-bottom: 2px solid #0072ce;
 }
 
+.mp-card img{
+    width: 60%;
+}
+
+
 /* new-entry */
 .mp-bg-darkgray{
     background-color: #1f1f1f;
 }
 
+.mp-new-img img{
+    border-radius: 15px;
+}
 
 /* ps-plus */
 .mp-bg-gray{
